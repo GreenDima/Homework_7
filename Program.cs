@@ -90,3 +90,51 @@
 // PrintArray(arr);
 // SearchElement(arr, row, col);
 
+
+
+
+// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+void Array(int [,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)       
+        {
+            arr[i, j] = Convert.ToInt32(new Random().Next(0, 10));
+        }
+    }
+}
+
+// void PrintArray(int [,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)       
+//         {
+//             Console.Write($"{array[i, j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// void ArithmeticMean(int [,] arr)
+// {
+//     string avs = string.Empty;
+//     for (int i = 0; i < arr.GetLength(1); i++)
+//     {
+//         double sum = 0;
+//         // double avs = 0;
+//         for (int j = 0; j < arr.GetLength(0); j++)       
+//         {
+//             sum = (sum + arr[j, i]);  
+//         }
+//         avs = avs + Math.Round(sum / arr.GetLength(0), 1) + "; ";
+//     }
+//     Console.WriteLine("Среднее арифметическое каждого столбца: " + avs);
+// }
+// int [,] arr = new int [3, 5];
+// Array(arr);
+// PrintArray(arr);
+// Console.WriteLine();
+// ArithmeticMean(arr);
