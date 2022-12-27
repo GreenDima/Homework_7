@@ -95,16 +95,16 @@
 
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
-void Array(int [,] arr)
-{
-    for (int i = 0; i < arr.GetLength(0); i++)
-    {
-        for (int j = 0; j < arr.GetLength(1); j++)       
-        {
-            arr[i, j] = Convert.ToInt32(new Random().Next(0, 10));
-        }
-    }
-}
+// void Array(int [,] arr)
+// {
+//     for (int i = 0; i < arr.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < arr.GetLength(1); j++)       
+//         {
+//             arr[i, j] = Convert.ToInt32(new Random().Next(0, 10));
+//         }
+//     }
+// }
 
 // void PrintArray(int [,] array)
 // {
